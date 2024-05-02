@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="./index.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "./index.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./index.js"></script>
 </head>
 <body>
-    <h1>Php lesson</h1>
-    <form action="./request.php" method="post" class="form" id="productForm">
-        <input type="text" id="login" name="login" class="form-control" placeholder="Login"><br>
-        <input type="text" id="name" name="name" class="form-control" placeholder="Name"><br>
-        <input type="text" id="password" name="price" class="form-control" placeholder="Password"><br>
-        <div class="buttons">
-            <button type="submit" class="btn btn-success" id="add">Register</button>
-        </div>
-    </form>
+<div class="wrapper">
+    <h1>Registration form</h1>
+    <form action="" method="post" class="form" id="productForm">
+    <div class="input__wrap">
+    <input type="login" id = "login" name="login" placeholder="Login" aria-label="Login" required/>
+    <input type="email" id = "email" name="email" placeholder="Email" aria-label="Email" autocomplete="email" required/>
+    <input type="password" id = "password" name="password" placeholder="Password" aria-label="Password" required/>
+    <button class="secondary" id = "register">Register</button>
+    <button class="contrast" id = "loginbtn">Login</button>
+</form>
+</div>
+</div>
 </body>
 </html>

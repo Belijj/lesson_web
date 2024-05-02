@@ -1,8 +1,22 @@
-.form {
-    margin-top: 100px;
-    margin-left: 100px;
+.wrapper {
+    margin-top: 5%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.form input {
-    width: 300px;
+.input__wrap {
+    margin-top: 10%;
+    width: 30vw;
+}
+
+.input__wrap button {
+    width: 10vw;
+}
+
+.wrapper input {
+    width: 500px;
 }

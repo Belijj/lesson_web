@@ -1,8 +1,27 @@
 $(document).ready(function() {
-    $("#add").on('click', function(event) {
+    console.log("Loaded");
+
+    $("#register").on('click', function(event) {
         event.preventDefault();
-        $.post("./request.php", $("#productForm").serialize(), function(data) {
-            console.log("Response: ", data);
+        $.post("./register.php", $("#productForm").serialize(), function(data) {
+            if (data === "Email already exists!") {
+                alert("Email already exists!");
+            } else {
+                alert("Account created");
+            }
+        });
+    });
+
+    $("#loginbtn").on('click', function(event) {
+        event.preventDefault();
+        $.post("./login.php", $("#productForm").serialize(), function(data) {
+            if (data === "reg ok") {
+                alert("Registration successful");
+            } else if (data === "pass not ok") {
+                alert("Password incorrect");
+            } else {
+                alert("User not found");
+            }
         });
     });
 });
